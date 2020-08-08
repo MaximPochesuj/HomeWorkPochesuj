@@ -1,19 +1,6 @@
-package HomeWork2;
+package HomeWork2.Sorting;
 
 public class ВubbleSorting_3_1 {
-
-    public static void bubbleSort(int[] arrayVoid) {
-        for (int i = arrayVoid.length - 1; i > 0; i--) {
-            for (int j = 0; j < i; j++) {
-                if (arrayVoid[j] > arrayVoid[j + 1]) {
-                    int tmp = arrayVoid[j];
-                    arrayVoid[j] = arrayVoid[j + 1];
-                    arrayVoid[j + 1] = tmp;
-                }
-            }
-        }
-    }
-
     public static void main(String[] args) {
         System.out.println("Случайный массив: ");
         int array[] = new int[10];
@@ -26,6 +13,18 @@ public class ВubbleSorting_3_1 {
         System.out.println("Отсортированный массив: ");
         for (int i = 0; i < array.length; i++) {
             System.out.print(array[i] + "  ");
+        }
+    }
+
+    public static void bubbleSort(int[] arrayVoid) {
+        for (int i = arrayVoid.length - 1; i > 0; i--) {
+            for (int j = 0; j < i; j++) {
+                if (arrayVoid[j] > arrayVoid[j + 1]) {
+                    int tmp = arrayVoid[j];
+                    arrayVoid[j] = arrayVoid[j + 1];
+                    arrayVoid[j + 1] = tmp;
+                }
+            }
         }
     }
 }

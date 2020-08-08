@@ -1,16 +1,14 @@
-package HomeWork2;
+package HomeWork2.Arrays;
 
 import java.util.Scanner;
 
-public class Arrays_2_1_1_do_while {
+public class Arrays_2_1_3_for {
     public static void main(String[] args) {
-        int i = -1;
         Scanner in = new Scanner(System.in);
         System.out.println("Введите массив:");
         int array = in.nextInt();
-        do {i++;
+        for (int i = 0; i < array; i++) {
             System.out.println("Элемент массива: " + i);
         }
-        while (i < array - 1);
     }
 }
